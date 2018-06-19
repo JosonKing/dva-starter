@@ -15,7 +15,7 @@ class User extends Component {
 
     return (
       <div className={styles.container}>
-        
+        hello
       </div>
     );
   }
