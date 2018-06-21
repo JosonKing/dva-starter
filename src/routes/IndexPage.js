@@ -11,10 +11,10 @@ class IndexPage extends Component {
     };
   }
 
-  // componentDidMount() {
-  //   const { dispatch } = this.props;
-  //   dispatch({ type: 'init', payload : null });
-  // }
+  componentWillMount() {
+    const { dispatch } = this.props;
+    dispatch({ type: 'user/init', payload: null });
+  }
 
   render() {
     return (
@@ -25,4 +25,4 @@ class IndexPage extends Component {
   }
 }
 
-export default IndexPage;
+export default connect()(IndexPage);
